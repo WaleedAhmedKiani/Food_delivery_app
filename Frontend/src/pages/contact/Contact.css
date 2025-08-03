@@ -1,0 +1,151 @@
+
+header {
+    background-color: #323232;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 3rem;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+  }
+  
+  #contact-details {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    max-width: 1500px;
+    margin: 2rem auto;
+  }
+  
+  .contact-info, .form-section {
+    flex: 1;
+    margin-right: 2rem;
+  }
+  
+  .contact-info h2, .form-section h2 {
+    font-size: 1.5rem;
+    color: #000;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-info p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-info a {
+    color: #1E90FF;
+    text-decoration: none;
+  }
+  
+  .form-section form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form label {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  form input, form textarea {
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  form button {
+    background-color: #708090;
+    color: white;
+    border: none;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #e65500;
+  }
+  
+  /* *Media Queries */
+  @media (max-width: 991px) {
+    #contact-details {
+      flex-direction: column;
+      align-items: center;
+    }
+
+  
+    .contact-info, .form-section {
+      width: 90%;
+      margin-bottom: 20px;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  /* Mobile View (max-width: 576px) */
+  @media (max-width: 576px) {
+    body {
+      padding: 10px;
+    }
+
+    #contact-details {
+      padding: 10px;
+    }
+
+    header {
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+
+    .contact-info, .form-section {
+      padding: 15px;
+      width: 100%;
+      box-shadow: none;
+    }
+
+    input, textarea {
+      font-size: 0.9rem;
+      padding: 8px;
+    }
+
+    button {
+      padding: 8px 15px;
+    }
+  }
+  header {
+    padding: 2rem;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
+ .contact-info {
+  margin: auto;
+ }
+ .form-section {
+  margin: auto;
+ }

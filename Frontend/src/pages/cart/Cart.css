@@ -1,0 +1,115 @@
+.cart {
+    margin-top: 100px;
+}
+.cart-items-title {
+    display: grid;
+    color: rgb(83, 85, 85);
+    align-items: center;
+    font-size: max(1vw,12px);
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+}
+.cart-item-item {
+    color: #000;
+    margin: 12px 0px;
+}
+.cart-item-item img {
+    width: 70px;
+}
+.cart hr {
+    border: none;
+    height: 1px;
+    background-color: #D3D3D3;
+}
+.cart-item-item .cross {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.cart-bottom {
+    margin-top: 80px;
+    display: flex;
+    gap: max(12vw,20px);
+    justify-content: space-between;
+}
+.cart-total {
+    flex: 1;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.cart-total hr {
+    margin: 12px 0px;
+}
+.cart-total-details {
+    display: flex;
+    color: #555;
+    justify-content: space-between;
+}
+.cart-total button {
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #D3D3D3;
+    cursor: pointer;
+    border-radius: 4px;
+    width: max(15vw,200px);
+    padding: 8px 14px;
+    background-color: #F73030;
+}
+.promo-code{
+    flex: 1;
+}
+.promo-code p {
+    color: #555;
+}
+.promo-code-input{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    background-color: #eaeaea;
+    justify-content: space-between;
+}
+.promo-code-input input {
+    border: none;
+    outline: none;
+    padding: 6px 12px;
+    background: transparent;
+}
+.promo-code-input button {
+    color: #fff;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 8px 16px;
+    width: max(10vw,150px);
+    background-color: #000;
+}
+/* *Media Queries */
+/* @media (max-width:750px) {
+   
+} */
+
+@media only screen and (min-width: 200px) and (max-width: 767px) {
+    .cart-bottom {
+        flex-direction: column-reverse;
+    }
+    .cart-item-item img {
+        width: 30px;
+    }
+    .cart-item-item p {
+        font-size: 8px;
+    }
+    .promo-code {
+        justify-content: start;
+    }
+    .promo-code-input button{
+        padding: 6px 12px;
+    }
+    .cart-total button {
+        width: 100%;
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+}

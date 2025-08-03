@@ -1,0 +1,111 @@
+.header {
+    height: 80vh;
+    margin: -10px auto 80px auto;
+    position: relative;
+    /* z-index: -1; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: url('/header_img.png');
+}
+
+.header-content {
+    position: absolute;
+    display: flex;
+    color: #000;
+    gap: 1.5vw;
+    left: 6vw;
+    bottom: 35%;
+    max-width: 60%;
+    align-items: start;
+    flex-direction: column;
+    animation: fadeIn 3s;
+}
+
+.header-content h2 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.header-content p {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.header-content a {
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    background-color: #708090;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 16px;
+    border-radius: 50px;
+}
+
+/* ^Media Queries */
+@media (max-width:1050px) {
+    .header {
+        height: 45vw;
+        margin: 0px auto 40px auto;
+    }
+
+    .header-content {
+        max-width: 45%;
+    }
+    .header-content h2 {
+        font-size: 20px;
+    }
+    .header-content p {
+        font-size: 14px;
+    }
+    .header-content a {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
+/* *For Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1024px)  {
+    .header {
+        height: 35vw;
+        margin: 0px auto 40px auto;
+    }
+
+    .header-content {
+        max-width: 70%;
+    }
+    
+    .header-content h2 {
+        font-size: 14px;
+    }
+    .header-content p {
+        font-size: 12px;
+    }
+    .header-content a {
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+}
+/* *For Mobile Devices */
+@media only screen and (min-width: 200px) and (max-width: 767px)  {
+    /* Put your CSS here for 200px to 767px width devices (cover all mobile portrait width        */
+    .header {
+        height: 50vw;
+        margin: 0px auto 40px auto;
+    }
+
+    .header-content {
+        max-width: 80%;
+    }
+    
+    .header-content h2 {
+        font-size: 12px;
+    }
+    .header-content p {
+        font-size: 8px;
+    }
+    .header-content a {
+        font-size: 8px;
+        padding: 4px 8px;
+    }
+
+}

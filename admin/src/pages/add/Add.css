@@ -1,0 +1,166 @@
+/* General Styles */
+.add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+  min-width: 50%;
+  background-color: #f7f7f7;
+}
+
+form.flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  background-color: #fff;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Upload Image Section */
+.add-img-uplod {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.add-img-uplod p {
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+}
+
+.add-img-uplod label {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.add-img-uplod label:hover {
+  transform: scale(1.03);
+}
+
+.add-img-uplod img {
+  width: 100px;
+  height: 100px;
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Input Fields */
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.flex-col p {
+  font-size: 16px;
+  color: #444;
+}
+
+.flex-col input,
+.flex-col textarea,
+.flex-col select {
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.flex-col input:focus,
+.flex-col textarea:focus,
+.flex-col select:focus {
+  border-color: #007bff;
+}
+
+/* Category + Price Row */
+.add-category-price {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.add-category,
+.add-price {
+  flex: 1 1 45%;
+}
+
+/* Button */
+.add-btn {
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Media Queries */
+
+/* 📱 Mobile Devices */
+@media (max-width: 767px) {
+  .add {
+    padding: 20px;
+  }
+
+  form.flex-col {
+    padding: 20px;
+  }
+
+  .add-img-uplod img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .add-category-price {
+    flex-direction: column;
+  }
+
+  .add-category,
+  .add-price {
+    flex: 1 1 100%;
+  }
+}
+
+/* 📱 Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .add-img-uplod img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .add {
+    padding: 30px;
+  }
+
+  form.flex-col {
+    padding: 28px;
+  }
+}
+
+/* 🖥️ Large Screens */
+@media (min-width: 1200px) {
+  .add-img-uplod img {
+    width: 120px;
+    height: 120px;
+  }
+
+  form.flex-col {
+    max-width: 700px;
+  }
+}

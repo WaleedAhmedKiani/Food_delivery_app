@@ -1,0 +1,121 @@
+/* Common Style for Table Format Rows */
+.list {
+  margin: 2rem 4rem;
+}
+.list h1 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+.list-table-formate {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr 1fr 0.5fr; /* Image, Name, Category, Price, Action */
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+  gap: 140px;
+  background-color: #fff;
+}
+
+/* Style for Image Cells */
+.list-table-formate img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* Style for Text Cells */
+.list-table-formate p {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Style for Header Row */
+.list-table-formate.title {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+/* Apply bold style to <b> tags in title */
+.list-table-formate.title b {
+  color: white;
+}
+
+/* Action Column (X button) */
+.list-table-formate p:last-child {
+  color: crimson;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Hover effect */
+.list-table-formate:not(.title):hover {
+  background-color: #f9f9f9;
+  transition: 0.3s;
+}
+
+/* 🖥️ Laptop Screens (1024px and up) */
+@media (min-width: 1024px) {
+  .list-table-formate {
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 0.5fr;
+    gap: 120px;
+    font-size: 16px;
+  }
+
+  .list-table-formate img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+/* 📱 Tablets (Between 601px and 1023px) */
+@media (max-width: 1023px) and (min-width: 601px) {
+  .list-table-formate {
+    grid-template-columns: 0.5fr 0.7fr 0.7fr 0.5fr 0.5fr;
+    gap: 40px;
+    font-size: 14px;
+  }
+
+  .list-table-formate img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .list-table-formate.title {
+    font-size: 13px;
+  }
+}
+
+/* 📱 Mobile Devices (600px and below) */
+@media (max-width: 600px) {
+  .list-table-formate {
+    grid-template-columns: 0.5fr 0.7fr 0.5fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    padding: 12px;
+  }
+  .list h1 {
+    font-size: 16px;
+  }
+
+  .list-table-formate img {
+    grid-column: 1 / span 2;
+    width: 80px;
+    height: 80px;
+    justify-self: center;
+  }
+
+  .list-table-formate p {
+    font-size: 14px;
+  }
+
+  .list-table-formate.title {
+    display: none; /* Hide header row on small screens */
+  }
+}
+
