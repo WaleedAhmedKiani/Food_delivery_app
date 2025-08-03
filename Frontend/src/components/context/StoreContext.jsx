@@ -14,7 +14,7 @@ const StoreContextProvider = (props) => {
     const navigate = useNavigate();
 
     // Backend url
-    const URL = "http://localhost:3000";
+    const URL = "https://food-delivery-backend-8fbv.onrender.com";
 
     //    Add Item To Cart
     const Add_Cart = async (Itemid) => {
