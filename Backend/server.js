@@ -27,10 +27,10 @@ app.use("/api/order", OrderRouter);
 app.use('/images', express.static('uploads'));
 
 
-// app.get('/api/users', (req, res) => {
 
-app.get('/', (req, res) => {
-  res.send('Hello World!')
+// ping endpoint
+app.get('/ping', (req, res) => {
+  res.status(200).send('Food app running');
 });
 
 
